@@ -1,6 +1,4 @@
 ##  magento on the go
-==============
-
 Magento with db manager running easily in just one build / run.
 
 ### What's bundled :

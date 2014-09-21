@@ -14,12 +14,12 @@ Get into your server with SHELL access. And run a git pull which follows
 
 NOTE: There is a tiny little dot in the end
 
-This will get basic files for building our git image. Then start the build using
+This will get basic files for building our docker image. Then start the build using
 > docker build -t {sitename}/magento .
 
 NOTE: There is a tiny little dot in the end
 
-This will take some time wait till the docker finish building. Once done Docker will bring a success message. (50% of work done :) )
+This will take some time wait till the docker finish building. Once done, Docker will bring a success message.
 
 ### How to run :
 Using the docker image we build we can bring the server up in seconds. 
@@ -42,12 +42,14 @@ There are two users for us to choose.
 First is our default root user with only the localhost connection, the logins are 
 > root / unknown
 
-Second is the user with normal access from other servers to external user admin
-to find your password for admin you must type 
+Second is the user with external access, With which you can login from other servers too username is admin
+
+To find your password for admin you must type 
 > docker ps
-which shows the running containers note down the id
+
+which shows the running containers and id note down the container id
 Then run
-docker logs {container id}
+> docker logs {container id}
 
 That will print down the password like 
 
@@ -55,14 +57,14 @@ mysql -uadmin -pXXXXXXXXXXX -h<host> -P<port>
 
 you can use any account since we are running magento only from localhost.
 
-After finding out the password or using root account goto 
+After finding out the password or using root account login into 
 > http://your.ip.address-or-sitename.com/adminer.php
 NOTE : In a separate tab
 
-Enter the login info and you will get your Database Manager. 
+You will get your Database Manager. 
 Create a new database for Magento and use this info in Magento installation process and proceed. 
 
-Thats it your site now running!!!!
+Thats it your Magento store is now running!!!!
 
 ### Shell Access to your Magento :
 To access files you can use the shell access with 

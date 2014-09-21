@@ -1,4 +1,4 @@
-##  Magento On The Go
+##  Magento ONE
 Magento with db manager running easily in just one build / run.
 
 ### What's bundled :
@@ -10,7 +10,7 @@ Magento with db manager running easily in just one build / run.
 
 ### How to build :
 Get into your server with SHELL access. And run a git pull which follows
-> git clone https://github.com/ilampirai/magentoonthego.git .
+> git clone https://github.com/ilampirai/magentoone.git .
 
 This will get basic files for building our git image. Then start the build using
 > docker build -t {sitename}/magento .

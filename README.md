@@ -12,8 +12,11 @@ Magento with db manager running easily in just one build / run.
 Get into your server with SHELL access. And run a git pull which follows
 > git clone https://github.com/ilampirai/magentoone.git .
 
+NOTE: There is a tiny little dot in the end
+
 This will get basic files for building our git image. Then start the build using
 > docker build -t {sitename}/magento .
+
 NOTE: There is a tiny little dot in the end
 
 This will take some time wait till the docker finish building. Once done Docker will bring a success message. (50% of work done :) )

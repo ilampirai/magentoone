@@ -8,7 +8,14 @@ Magento with db manager running easily in just one build / run.
 - AMP (Apache (2.0) / Php (5.5.9) / Mysql)
 - Supervisor [to keep them up and running all time]
 
-### How to build :
+### How to Run using docker hub
+This is simple and one command that does it all
+> docker run -d -p 80:80 -p 2222:22 ilampirai/magentoone
+
+Thats it, The docker image will be pulled and start the container automatically.
+
+### How to build & run :
+Step 1 : Build
 Get into your server with SHELL access. And run a git pull which follows
 > git clone https://github.com/ilampirai/magentoone.git .
 
@@ -21,7 +28,7 @@ NOTE: There is a tiny little dot in the end
 
 This will take some time wait till the docker finish building. Once done, Docker will bring a success message.
 
-### How to run :
+Step 2 : Run
 Using the docker image we build we can bring the server up in seconds. 
 
 Just execute the final shell command  

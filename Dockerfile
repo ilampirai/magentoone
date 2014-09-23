@@ -1,5 +1,5 @@
-FROM ubuntu:trusty
-MAINTAINER Fernando Mayo <fernando@tutum.co>, Feng Honglin <hfeng@tutum.co>
+FROM ubuntu:latest
+MAINTAINER Ilampirai Nambi <mailme@ilam.in>
 
 # Install packages
 RUN apt-get update 

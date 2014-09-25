@@ -29,4 +29,4 @@ echo "Please remember to change the above password as soon as possible!"
 echo "MySQL user 'root' has password 'unknown' but only allows local connections"
 echo "========================================================================"
 
-mysqladmin -uroot shutdown
+mysqladmin -uroot -punknown shutdown
